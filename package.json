@@ -1,0 +1,27 @@
+{
+	"name": "test",
+	"type": "module",
+	"scripts": {
+		"build": "esbuild src/client/index.tsx --bundle --format=esm --outfile=build/bundle.js --minify --sourcemap --target=es2020",
+		"lint": "prettier --check . && eslint . && tsc --noEmit",
+		"start": "node src/server/index.js"
+	},
+	"dependencies": {
+		"@types/debug": "4.1.12",
+		"@types/express": "5.0.1",
+		"@types/node": "22.13.17",
+		"@types/react": "19.0.12",
+		"@types/react-dom": "19.0.4",
+		"@types/react-router": "5.1.20",
+		"debug": "4.4.0",
+		"esbuild": "^0.25.2",
+		"eslint": "9.23.0",
+		"express": "5.1.0",
+		"prettier": "3.5.3",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"react-router": "7.4.1",
+		"typescript": "5.8.2",
+		"typescript-eslint": "8.29.0"
+	}
+}
